@@ -6,36 +6,35 @@
 //
 
 import Foundation
+import IdentityLookup
 
-extension SimpleOutput{
+extension Simple_4Output{
     var typeName:String{
         var type = ""
         switch self.label {
-        case "ad":
-            type = "广告"
-        case "code":
-            type = "验证码短信"
-        case "public_ad":
-            type = "公益广告"
         case "normal":
             type = "正常短信"
         case "transaction":
             type = "交易信息"
         case "junk":
             type = "垃圾短信"
-        // 推广短信
+        case "unimportant":
+            type = "不重要的短信"
         default:
-            type = "其他"
+            type = "其他短信"
         }
         return type
     }
-    
-    var filterResult:String{
-        switch self.label {
-        case "ad","junk":
+}
+extension ILMessageFilterAction{
+    var result:String{
+        switch self {
+        case .junk:
             return "过滤"
-        default:
+        case .allow:
             return "不过滤"
+        default:
+            return "过滤情况未知"
         }
     }
 }

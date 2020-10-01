@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BasicSection: View {
-    let model:Simple = Simple()
     @State private var introToUse = false
     @State private var testMessage = false
     var body: some View {
@@ -25,34 +24,26 @@ struct BasicSection: View {
                 .onTapGesture {
                     testMessage.toggle()
                 }
-//                .alert(isPresented: $testMessage) {
-//                    if let message = UIPasteboard.general.string{
-//                        if let result = try? model.prediction(text: message){
-//                            return Alert(title: Text("这是\(result.typeName) \(result.filterResult)"), message: Text("\(message)"), primaryButton: .destructive(Text("提交为垃圾短信样本")), secondaryButton: .cancel(Text("好")))
-//                        }else{
-//                            return Alert(title: Text("模型出错，请稍后再试"), dismissButton: .cancel(Text("好")))
-//                        }
-//                    }else{
-//                        return Alert(title: Text("拷贝短信内容到剪贴板后点击此按钮，可以测试熊猫是如何判断该短信的"), dismissButton: .default(Text("好")))
-//                    }
-//                }
                 .actionSheet(isPresented: $testMessage){
                     if let message = UIPasteboard.general.string{
-                        if let result = try? model.prediction(text: message){
+                        do{
+                            let model = try Simple_4(configuration: SimpleConfiguration())
+                            let typeName = try model.prediction(text: message).typeName
+                            let action = model.MLMessagePredicate(message)
                             return ActionSheet(
-                                title: Text("这是\(result.typeName) \(result.filterResult)"),
+                                title: Text("这是\(typeName) \(action.result)"),
                                 message: Text("\(message)"),
                                 buttons: [
                                     .destructive(Text("提交为垃圾短信样本")),
                                     .default(Text("提交为正常短信样本")),
                                     .default(Text("提交为交易记录样本")),
                                     .cancel(Text("好"))])
-                        }else{
-                            return ActionSheet(title: Text("模型出错，请稍后再试"), message: nil, buttons: [.default(Text("好"))])
+                        }catch{
+                            print(error.localizedDescription)
                         }
+                        return ActionSheet(title: Text("模型出错，请稍后再试"), message: nil, buttons: [.default(Text("好"))])
                     }else{
-
-                    return ActionSheet(title: Text("拷贝短信内容到剪贴板后点击此按钮，可以测试熊猫是如何判断该短信的"), message: nil, buttons: [.default(Text("好"))])
+                        return ActionSheet(title: Text("拷贝短信内容到剪贴板后点击此按钮，可以测试熊猫是如何判断该短信的"), message: nil, buttons: [.default(Text("好"))])
                     }
                 }
             Text("熊猫从手动标注的几十万条短信中学习而成，您也可以提交新短信来教育本熊，喂养越多越聪明哦")

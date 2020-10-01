@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274F057D25261F56007009F0 /* Simple.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE4925256F9F00C27661 /* Simple.mlmodel */; };
+		274F05AC2526270B007009F0 /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F05AB2526270B007009F0 /* SharedStrings.swift */; };
+		274F05AD2526270B007009F0 /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F05AB2526270B007009F0 /* SharedStrings.swift */; };
+		274F05C625262FAD007009F0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F05C525262FAD007009F0 /* Configuration.swift */; };
+		274F05C725262FAD007009F0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F05C525262FAD007009F0 /* Configuration.swift */; };
+		274F05D7252634E1007009F0 /* Simple-4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 274F05D6252634E1007009F0 /* Simple-4.mlmodel */; };
+		274F05D8252634E1007009F0 /* Simple-4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 274F05D6252634E1007009F0 /* Simple-4.mlmodel */; };
 		274FE1872525718900C31875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274FE1862525718900C31875 /* Assets.xcassets */; };
 		2772DE0525256E5D00C27661 /* EatMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE0425256E5D00C27661 /* EatMessageApp.swift */; };
 		2772DE0725256E5D00C27661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE0625256E5D00C27661 /* ContentView.swift */; };
@@ -18,7 +25,7 @@
 		2772DE4325256F8A00C27661 /* CustomRulesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE3E25256F8A00C27661 /* CustomRulesSection.swift */; };
 		2772DE4425256F8A00C27661 /* FilterOptionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE3F25256F8A00C27661 /* FilterOptionsSection.swift */; };
 		2772DE4B25256F9F00C27661 /* Simple.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE4925256F9F00C27661 /* Simple.mlmodel */; };
-		2772DE4C25256F9F00C27661 /* SimpleOut+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE4A25256F9F00C27661 /* SimpleOut+String.swift */; };
+		2772DE4C25256F9F00C27661 /* Modal+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE4A25256F9F00C27661 /* Modal+String.swift */; };
 		2772DE5525256FE800C27661 /* BoolTextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE5125256FE800C27661 /* BoolTextInfo.swift */; };
 		2772DE5625256FE800C27661 /* TextIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE5225256FE800C27661 /* TextIcon.swift */; };
 		2772DE5725256FE800C27661 /* TextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE5325256FE800C27661 /* TextInfo.swift */; };
@@ -68,6 +75,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		274F057325261DD3007009F0 /* EatMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EatMessage.entitlements; sourceTree = "<group>"; };
+		274F057825261E0F007009F0 /* FilterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FilterExtension.entitlements; sourceTree = "<group>"; };
+		274F05AB2526270B007009F0 /* SharedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStrings.swift; sourceTree = "<group>"; };
+		274F05C525262FAD007009F0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		274F05D6252634E1007009F0 /* Simple-4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Simple-4.mlmodel"; sourceTree = "<group>"; };
 		274FE1862525718900C31875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274FE19025257D8400C31875 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2772DE0125256E5D00C27661 /* EatMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +98,7 @@
 		2772DE3E25256F8A00C27661 /* CustomRulesSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRulesSection.swift; sourceTree = "<group>"; };
 		2772DE3F25256F8A00C27661 /* FilterOptionsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOptionsSection.swift; sourceTree = "<group>"; };
 		2772DE4925256F9F00C27661 /* Simple.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Simple.mlmodel; sourceTree = "<group>"; };
-		2772DE4A25256F9F00C27661 /* SimpleOut+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimpleOut+String.swift"; sourceTree = "<group>"; };
+		2772DE4A25256F9F00C27661 /* Modal+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Modal+String.swift"; sourceTree = "<group>"; };
 		2772DE5125256FE800C27661 /* BoolTextInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolTextInfo.swift; sourceTree = "<group>"; };
 		2772DE5225256FE800C27661 /* TextIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextIcon.swift; sourceTree = "<group>"; };
 		2772DE5325256FE800C27661 /* TextInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInfo.swift; sourceTree = "<group>"; };
@@ -130,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		274F059A252625A8007009F0 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				274F05AB2526270B007009F0 /* SharedStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		2772DDF825256E5D00C27661 = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +176,14 @@
 		2772DE0325256E5D00C27661 /* EatMessage */ = {
 			isa = PBXGroup;
 			children = (
+				274F057325261DD3007009F0 /* EatMessage.entitlements */,
 				2772DE0425256E5D00C27661 /* EatMessageApp.swift */,
 				2772DE0625256E5D00C27661 /* ContentView.swift */,
 				2772DE3A25256F8A00C27661 /* Sections */,
 				2772DE6325256FFE00C27661 /* Pages */,
 				2772DE5025256FDA00C27661 /* Views */,
 				2772DE4825256F9F00C27661 /* Model */,
+				274F059A252625A8007009F0 /* Strings */,
 				274FE1862525718900C31875 /* Assets.xcassets */,
 				2772DE0D25256E5E00C27661 /* Info.plist */,
 				2772DE0A25256E5E00C27661 /* Preview Content */,
@@ -209,8 +231,10 @@
 		2772DE4825256F9F00C27661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				274F05D6252634E1007009F0 /* Simple-4.mlmodel */,
 				2772DE4925256F9F00C27661 /* Simple.mlmodel */,
-				2772DE4A25256F9F00C27661 /* SimpleOut+String.swift */,
+				274F05C525262FAD007009F0 /* Configuration.swift */,
+				2772DE4A25256F9F00C27661 /* Modal+String.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +262,7 @@
 		2772DE6C2525703200C27661 /* FilterExtension */ = {
 			isa = PBXGroup;
 			children = (
+				274F057825261E0F007009F0 /* FilterExtension.entitlements */,
 				2772DE6D2525703300C27661 /* MessageFilterExtension.swift */,
 				2772DE6F2525703300C27661 /* Info.plist */,
 			);
@@ -408,11 +433,14 @@
 				2772DE4B25256F9F00C27661 /* Simple.mlmodel in Sources */,
 				2772DE4325256F8A00C27661 /* CustomRulesSection.swift in Sources */,
 				2772DE0725256E5D00C27661 /* ContentView.swift in Sources */,
-				2772DE4C25256F9F00C27661 /* SimpleOut+String.swift in Sources */,
+				2772DE4C25256F9F00C27661 /* Modal+String.swift in Sources */,
+				274F05C625262FAD007009F0 /* Configuration.swift in Sources */,
 				2772DE4425256F8A00C27661 /* FilterOptionsSection.swift in Sources */,
 				2772DE4125256F8A00C27661 /* AboutSection.swift in Sources */,
 				2772DE5625256FE800C27661 /* TextIcon.swift in Sources */,
 				2772DE5525256FE800C27661 /* BoolTextInfo.swift in Sources */,
+				274F05AC2526270B007009F0 /* SharedStrings.swift in Sources */,
+				274F05D7252634E1007009F0 /* Simple-4.mlmodel in Sources */,
 				2772DE4225256F8A00C27661 /* BasicSection.swift in Sources */,
 				2772DE5F25256FFA00C27661 /* IntroPage.swift in Sources */,
 				2772DE5725256FE800C27661 /* TextInfo.swift in Sources */,
@@ -440,6 +468,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274F057D25261F56007009F0 /* Simple.mlmodel in Sources */,
+				274F05AD2526270B007009F0 /* SharedStrings.swift in Sources */,
+				274F05C725262FAD007009F0 /* Configuration.swift in Sources */,
+				274F05D8252634E1007009F0 /* Simple-4.mlmodel in Sources */,
 				2772DE6E2525703300C27661 /* MessageFilterExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -530,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -587,6 +621,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EatMessage/EatMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EatMessage/Preview Content\"";
 				DEVELOPMENT_TEAM = VB7MJ8R223;
@@ -610,6 +645,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EatMessage/EatMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"EatMessage/Preview Content\"";
 				DEVELOPMENT_TEAM = VB7MJ8R223;
@@ -714,6 +750,7 @@
 		2772DE742525703300C27661 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterExtension/FilterExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB7MJ8R223;
 				INFOPLIST_FILE = FilterExtension/Info.plist;
@@ -733,6 +770,7 @@
 		2772DE752525703300C27661 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FilterExtension/FilterExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB7MJ8R223;
 				INFOPLIST_FILE = FilterExtension/Info.plist;

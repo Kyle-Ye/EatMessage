@@ -6,6 +6,7 @@
 //
 
 import IdentityLookup
+import CoreML
 
 final class MessageFilterExtension: ILMessageFilterExtension {}
 
@@ -18,31 +19,32 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     }
 
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
-//        guard let messageBody = queryRequest.messageBody else {
-//            return .none
-//        }
-//        guard let sender = queryRequest.sender else {
-//            return .none
-//        }
-//        if allowFiveDigit && sender.count == 5{
-//            return .allow
-//        }
-//        let model = Simple()
-//        let a = try! model.prediction(text: messageBody)
-//        switch a.label {
-//        case "spam":
-//            return .junk
-//        case "tran":
-//            return .transaction
-//        case "normal":
-//            return .allow
-//        default:
-//            return .none
-//        }
+        guard let messageBody = queryRequest.messageBody else {
+            return .none
+        }
+        guard let sender = queryRequest.sender else {
+            return .none
+        }
+        
+        do {
+            let model = try Simple_4(configuration: SimpleConfiguration())
+            
+            // TODO: Rule1: Number list
+            
+            // Rule2: 5 digit check
+            if model.allowFiveDigit && sender.count == 5{
+                return .allow
+            }
+            // Rule3: Keyword list
+            
+            // Rule4: ML model desicion
+            return model.MLMessagePredicate(messageBody)
+            
+        } catch {
+            print(error.localizedDescription)
+        }
         return .none
     }
-    
-    private var allowFiveDigit:Bool{
-        return true
-    }
+
 }
+
