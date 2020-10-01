@@ -69,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		274FE1862525718900C31875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		274FE19025257D8400C31875 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2772DE0125256E5D00C27661 /* EatMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2772DE0425256E5D00C27661 /* EatMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMessageApp.swift; sourceTree = "<group>"; };
 		2772DE0625256E5D00C27661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		2772DDF825256E5D00C27661 = {
 			isa = PBXGroup;
 			children = (
+				274FE19025257D8400C31875 /* README.md */,
 				2772DE0325256E5D00C27661 /* EatMessage */,
 				2772DE6C2525703200C27661 /* FilterExtension */,
 				2772DE1525256E5F00C27661 /* EatMessageTests */,
