@@ -94,7 +94,7 @@ struct IntroPage: View {
             .clipShape(RoundedRectangle(cornerRadius: 10.0))
         }
         .padding(.horizontal,30)
-        .padding(.top, 15.0)
+        .padding(.top, 30.0)
         .padding(.bottom,30.0)
     }
 }

@@ -21,7 +21,7 @@ struct ContentView: View {
             }
             .navigationTitle("熊猫吃短信")
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+//        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -25,8 +25,8 @@ struct FilterOptionsSection: View {
                     .foregroundColor(.secondary)
                     .padding(.bottom, 5.0)
             }
-            BoolTextInfo(text: "过滤广告、推销等垃圾广告",page: ExamplePage(),chosen: $filterJunk)
-            BoolTextInfo(text: "过滤公益和不重要的短信",page:ExamplePage(),chosen: $filterUnimportant)
+            BoolTextInfo(text: "过滤广告、推销等垃圾广告",page: ExamplePage.junk,chosen: $filterJunk)
+            BoolTextInfo(text: "过滤公益和不重要的短信",page:ExamplePage.unimportant,chosen: $filterUnimportant)
             BoolTextInfo(text: "不过滤五位数号码", footer: "银行运营商等公共单位",chosen: $allowFiveDigit)
         }
     }

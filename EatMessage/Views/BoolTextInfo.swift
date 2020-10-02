@@ -48,8 +48,8 @@ struct BoolTextInfo_Previews: PreviewProvider {
     static var b = true
     static var previews: some View {
         List{
-            BoolTextInfo(text: "过滤广告、推销等垃圾广告",page: ExamplePage(),chosen: .constant(true))
-            BoolTextInfo(text: "过滤公益和不重要的短信",page: ExamplePage(),chosen: .constant(true))
+            BoolTextInfo(text: "过滤广告、推销等垃圾广告",page: ExamplePage.junk,chosen: .constant(true))
+            BoolTextInfo(text: "过滤公益和不重要的短信",page: ExamplePage.unimportant,chosen: .constant(true))
             BoolTextInfo(text: "不过滤五位数号码", footer: "银行商等公共单位",chosen: .init(
                             get: { b },
                             set: { b = $0 }
