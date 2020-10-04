@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CustomRulesSection: View {
     private let titles = ["号码允许列表","号码禁止列表","关键词允许列表","关键词禁止列表"]
+    private let lists:[CustomRulesView] = [.numberAllowedList,.numberBannedList,
+                                           .keywordAllowedList,.keywordBannedList]
     @State private var showRules = false
     private let rules = """
 优先级从高到低分别是:
@@ -38,11 +40,11 @@ struct CustomRulesSection: View {
                             dismissButton: .cancel())
                     }
             }
-            ForEach(titles,id:\.self){title in
+            ForEach(0..<titles.count) { index in
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination: lists[index],
                     label: {
-                        Text(title)
+                        Text(titles[index])
                             .font(.subheadline)
                     })
             }

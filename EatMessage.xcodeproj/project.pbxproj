@@ -34,6 +34,7 @@
 		2772DE5F25256FFA00C27661 /* IntroPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE5D25256FFA00C27661 /* IntroPage.swift */; };
 		2772DE6E2525703300C27661 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772DE6D2525703300C27661 /* MessageFilterExtension.swift */; };
 		2772DE722525703300C27661 /* FilterExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2772DE6B2525703200C27661 /* FilterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27DF0AA92529BBC500A89BD9 /* CustomRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF0AA82529BBC500A89BD9 /* CustomRulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		2772DE6B2525703200C27661 /* FilterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2772DE6D2525703300C27661 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
 		2772DE6F2525703300C27661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DF0AA82529BBC500A89BD9 /* CustomRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRulesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +224,8 @@
 			children = (
 				2772DE3D25256F8A00C27661 /* BasicSection.swift */,
 				2772DE3F25256F8A00C27661 /* FilterOptionsSection.swift */,
-				2772DE3C25256F8A00C27661 /* AboutSection.swift */,
 				2772DE3E25256F8A00C27661 /* CustomRulesSection.swift */,
+				2772DE3C25256F8A00C27661 /* AboutSection.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -255,6 +257,7 @@
 			children = (
 				2772DE5D25256FFA00C27661 /* IntroPage.swift */,
 				2772DE5C25256FFA00C27661 /* ExamplePage.swift */,
+				27DF0AA82529BBC500A89BD9 /* CustomRulesView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				2772DE5F25256FFA00C27661 /* IntroPage.swift in Sources */,
 				2772DE5725256FE800C27661 /* TextInfo.swift in Sources */,
 				2772DE0525256E5D00C27661 /* EatMessageApp.swift in Sources */,
+				27DF0AA92529BBC500A89BD9 /* CustomRulesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
