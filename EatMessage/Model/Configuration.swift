@@ -12,20 +12,20 @@ class SimpleConfiguration: MLModelConfiguration {
     
 }
 extension Simple_4{
-    var filterJfunk:Bool{
+    var filterJunk:Bool{
         return UserDefaults(suiteName: suiteName)?.bool(forKey: s_junk) ?? true
     }
     var filterUnimportant:Bool{
-        return UserDefaults(suiteName: suiteName)?.bool(forKey: s_unim) ?? true
+        return UserDefaults(suiteName: suiteName)?.bool(forKey: s_unimportant) ?? true
     }
     var allowFiveDigit:Bool{
-        return UserDefaults(suiteName: suiteName)?.bool(forKey: s_digi) ?? true
+        return UserDefaults(suiteName: suiteName)?.bool(forKey: s_digitAllow) ?? true
     }
     func MLMessagePredicate(_ messageBody:String) -> ILMessageFilterAction{
         if let result = try? self.prediction(text: messageBody){
             switch result.label {
             case "junk":
-                if filterJfunk{
+                if filterJunk{
                     return .junk
                 }else{
                     return .allow

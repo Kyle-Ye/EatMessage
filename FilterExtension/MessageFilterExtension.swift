@@ -37,7 +37,7 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
             }
             // Rule3: Keyword list
             
-            // Rule4: ML model desicion
+            // Rule4: ML model decision
             return model.MLMessagePredicate(messageBody)
             
         } catch {

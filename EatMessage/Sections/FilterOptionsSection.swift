@@ -10,9 +10,9 @@ import SwiftUI
 struct FilterOptionsSection: View {
     @AppStorage(s_junk,store:UserDefaults.init(suiteName: suiteName))
     var filterJunk = true
-    @AppStorage(s_unim,store:UserDefaults.init(suiteName: suiteName))
+    @AppStorage(s_unimportant,store:UserDefaults.init(suiteName: suiteName))
     var filterUnimportant = true
-    @AppStorage(s_digi,store:UserDefaults.init(suiteName: suiteName))
+    @AppStorage(s_digitAllow,store:UserDefaults.init(suiteName: suiteName))
     var allowFiveDigit = true
     var body: some View {
         Section{
